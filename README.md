@@ -45,7 +45,7 @@ git config --global --list
 
 ## Authentication
 
-### 1. Create a Personal Access Token
+### Create a Personal Access Token
 - https://github.com/settings/tokens
 - give it a name like "personal laptop" 
 - copy the token somewhere temporary - but don't save it!
