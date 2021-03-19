@@ -40,6 +40,7 @@ Copy each of the following commands, adapt the name and email address (the email
 ```
 git config --global user.name 'Jane Doe'
 git config --global user.email 'jane@example.com'
+git config --global alias.graph 'log --graph --oneline'
 git config --global --list
 ```
 
