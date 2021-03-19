@@ -119,3 +119,13 @@ Source: https://imgs.xkcd.com/comics/correlation.png
 
 merge conflicts might be a bit frightening but you can do it! :) 
 
+
+# Resources
+## Read
+- [Git Book - Git Basics Chapter](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository): very good overview! 
+- [Happy Git with R](https://happygitwithr.com/): R in RStudio
+- [Git our sh*t together - VSCode](https://gost.netlify.app/en/2019-12-01_correlaid-meetup-berlin/#1): a similar workshop to this one but with the excellent Git VSCode extension
+
+## Practice 
+- [Git Katas](https://github.com/muses-code-js/git-katas): command line Git through focused exercises
+- [Learn Git Branching](https://learngitbranching.js.org/): interactive exercises to learn git branching
