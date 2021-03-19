@@ -117,4 +117,5 @@ image from the web
 
 Source: https://imgs.xkcd.com/comics/correlation.png
 
-i added this line in Rstudio without knowing that someone else edited it
+merge conflicts might be a bit frightening but you can do it! :) 
+
