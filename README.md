@@ -5,7 +5,7 @@ This is a repository for Git newbies to fork and play with.
 
 ## Create GitHub account
 - Create a GitHub account if you have not already: https://github.com/join
-- Create a **private** repository called `my-private-repo`: https://github.com/new . Make sure to tick the "Add a README file" box.
+- Create a **private** repository called `git-tryout`: https://github.com/new . Make sure to tick the "Add a README file" box.
 
 ## Install Git
 
@@ -68,17 +68,17 @@ git credential-manager-core configure
 this tells git to use the [credential-manager-core](https://github.com/microsoft/Git-Credential-Manager-Core) as the _credential store_.
 
 
-we need to _trigger_ the credential store, so let's clone ("download") your private repository `my-private-repo` that you created before:
+we need to _trigger_ the credential store, so let's clone ("download") your private repository `git-tryout` that you created before:
 
 ```
-git clone https://github.com/{your_github_username}/my-private-repo
+git clone https://github.com/{your_github_username}/git-tryout
 ```
 
 It will look something like this. Make sure to select option 2 by typing in "2" and hitting enter. Then paste your PAT:
 
 ![](images/core-cred-manager.png)
 
-Hit enter. Git should clone your repository. You can confirm it is there by running `ls` - `my-private-repo` should be in the list.
+Hit enter. Git should clone your repository. You can confirm it is there by running `ls` - `git-tryout` should be in the list.
 
 ### Linux 
 
