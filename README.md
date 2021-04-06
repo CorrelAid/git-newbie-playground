@@ -1,7 +1,9 @@
 # git-newbie-playground
 This is a repository for Git newbies to fork and play with. 
 
+
 # Setup Git and GitHub
+⚠️ Setting up Git on your local machine / laptop can be a bit of a pain and might not work the first time. I tried to describe a way that _should_ work. That being said, I could not test it extensively (because Git is already set up for me and I don't have access to a Windows machine). ⚠️
 
 ## Create GitHub account
 - Create a GitHub account if you have not already: https://github.com/join
