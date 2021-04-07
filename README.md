@@ -61,7 +61,7 @@ Now, we have to store the Personal Access Token (PAT) on our Laptop and tell Git
 
 ### 4.2. Store the Personal Access Token safely
 
-### 4.2.a. Windows and Mac
+### 4.2.1. Windows and Mac
 
 **Mac**: On Mac, install **[Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core/releases/tag/v2.0.394-beta)** by downloading and executing the `pkg` installer. 
 
@@ -88,7 +88,7 @@ It will look something like this. Make sure to select option 2 by typing in "2" 
 
 Hit enter. Git should clone your repository. You can confirm it is there by running `ls` - `git-tryout` should be in the list.
 
-### 4.2.b. Linux 
+### 4.2.2. Linux 
 
 You should use the `libsecret` package, see [this article](https://www.softwaredeveloper.blog/git-credential-storage-libsecret)
 
