@@ -71,6 +71,13 @@ git credential-manager-core configure
 
 this tells git to use the [credential-manager-core](https://github.com/microsoft/Git-Credential-Manager-Core) as the _credential store_.
 
+```
+
+just to make sure, we also update the git config (this might be necessary if you had git installed before):
+
+```
+git config --global credential.helper manager-core 
+```
 
 we need to _trigger_ the credential store to save our Personal Access Token in it, so let's clone ("download") your private repository `git-tryout` that you created before:
 
@@ -99,8 +106,13 @@ Open a Terminal, copy+paste the following command and hit enter:
 git credential-manager-core configure
 ```
 
-this tells git to use the [credential-manager-core](https://github.com/microsoft/Git-Credential-Manager-Core) as the _credential store_.
+this configures the credential manager and tells git to use the [credential-manager-core](https://github.com/microsoft/Git-Credential-Manager-Core) as the _credential store_.
 
+just to make sure, we also update the git config (this might be necessary if you had git installed before):
+
+```
+git config --global credential.helper manager-core 
+```
 
 we need to _trigger_ the credential store to save our Personal Access Token in it, so let's clone ("download") your private repository `git-tryout` that you created before:
 
