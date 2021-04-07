@@ -101,6 +101,40 @@ If this is not an option on your Linux distro, you can:
 - add to GitHub
   - go to the [SSH keys](https://github.com/settings/keys) section of the GitHub settings and copy your key into the box. Give a meaningful name and click "add key"
   
+## Test your setup
+If you haven't already, clone your tryout repository in Git bash / terminal:
+
+```
+git clone https://github.com/{your_github_username}/git-tryout
+```
+
+You can also run it again if you are unsure...it will show an error if the folder already exists on your machine. Then it's fine - it means you already have cloned it! :) 
+
+Run the following to change the folder: 
+
+```
+cd git-tryout
+```
+
+now create a file, add it to git and upload it to GitHub with the following commands (you'll learn about those in the workshop):
+
+```
+touch test.txt
+git add test.txt
+git commit -m 'add a test file'
+git push
+```
+
+If it says something like the following in the output, you're fine:
+
+```bash
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 923 bytes | 923.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:friep/git-tryout.git
+   5ce4a1f..aa7d778  main -> main
+```
 
 # Markdown syntax
 
