@@ -61,13 +61,9 @@ Now, we have to store the Personal Access Token (PAT) on our Laptop and tell Git
 
 ### 4.2. Store the Personal Access Token safely
 
-### 4.2.1. Windows and Mac
+### 4.2.1. Windows
 
-**Mac**: On Mac, install **[Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core/releases/tag/v2.0.394-beta)** by downloading and executing the `pkg` installer. 
-
-Open Git Bash (on Windows) or the Terminal (on Mac)
-
-Copy+paste the following command and hit enter: 
+Open Git Bash, copy+paste the following command and hit enter: 
 
 ```
 git credential-manager-core configure
@@ -76,27 +72,50 @@ git credential-manager-core configure
 this tells git to use the [credential-manager-core](https://github.com/microsoft/Git-Credential-Manager-Core) as the _credential store_.
 
 
-we need to _trigger_ the credential store, so let's clone ("download") your private repository `git-tryout` that you created before:
+we need to _trigger_ the credential store to save our Personal Access Token in it, so let's clone ("download") your private repository `git-tryout` that you created before:
 
 ```
 git clone https://github.com/{your_github_username}/git-tryout
 ```
 
-**On Windows**, a popup should pop up asking you to authenticate via GitHub. It should look something like this:
+A popup should pop up asking you to authenticate via GitHub. Now, enter your username and **the Personal Access Token** instead of your GitHub password and confirm!
 
 ![](images/core-cred-manager-popup.png) 
 
-Now, enter your username and **the Personal Access Token** instead of your GitHub password!
+Git should clone your repository. You can confirm it is there by running `ls` in your Git bash window
 
-Git should clone your repository. You can confirm it is there by running `ls` - `git-tryout` should be in the list.
+```
+ls
+```
 
-**On Mac**: it will look something like this. Make sure to select option 2 by typing in "2" and hitting enter. Then paste your PAT:
+`git-tryout` should be in the list.
+
+### 4.2.2. Mac
+Install **[Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core/releases/tag/v2.0.394-beta)** by downloading and executing the `pkg` installer. 
+
+Open a Terminal, copy+paste the following command and hit enter: 
+
+```
+git credential-manager-core configure
+```
+
+this tells git to use the [credential-manager-core](https://github.com/microsoft/Git-Credential-Manager-Core) as the _credential store_.
+
+
+we need to _trigger_ the credential store to save our Personal Access Token in it, so let's clone ("download") your private repository `git-tryout` that you created before:
+
+```
+git clone https://github.com/{your_github_username}/git-tryout
+```
+
+A "dialogue" will appear in the terminal. Make sure to select option 2 by typing in "2" and hitting enter. Then paste your PAT:
 
 ![](images/core-cred-manager.png)
 
 Hit enter. 
 
-Git should clone your repository. You can confirm it is there by running `ls` - `git-tryout` should be in the list.
+Git should clone your repository. You can confirm it is there by running `ls` in the terminal. The list should include `git-tryout`.
+
 
 ### 4.2.2. Linux 
 
@@ -116,15 +135,15 @@ If this is not an option on your Linux distro, you can:
   - go to the [SSH keys](https://github.com/settings/keys) section of the GitHub settings and copy your key into the box. Give a meaningful name and click "add key"
   
 ## 5. Test your setup
-If you haven't already, clone your tryout repository in Git bash / terminal:
+If you haven't already in step 4, clone your tryout repository in Git bash / terminal:
 
 ```
 git clone https://github.com/{your_github_username}/git-tryout
 ```
 
-You can also run it again if you are unsure...it will show an error if the folder already exists on your machine. Then it's fine - it means you already have cloned it! :) 
+You can also run it again if you are unsure...it will show an error if the folder already exists on your machine. If this happens, it's fine - it means you already have cloned it and the folder exists where you currently are! :) 
 
-Run the following to change the folder: 
+Run the following to go into the folder: 
 
 ```
 cd git-tryout
