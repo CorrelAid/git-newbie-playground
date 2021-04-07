@@ -82,7 +82,8 @@ we need to _trigger_ the credential store, so let's clone ("download") your priv
 git clone https://github.com/{your_github_username}/git-tryout
 ```
 
-It will look something like this. Make sure to select option 2 by typing in "2" and hitting enter. Then paste your PAT:
+**On Windows**, a popup should pop up asking you to authenticate via GitHub 
+**On Mac**: it will look something like this. Make sure to select option 2 by typing in "2" and hitting enter. Then paste your PAT:
 
 ![](images/core-cred-manager.png)
 
