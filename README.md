@@ -7,13 +7,13 @@ This is a repository for Git newbies to fork and play with.
 
 **If something does not work for you, please open an issue [here](https://github.com/CorrelAid/git-newbie-playground/issues). That would really help me in improving this material!**
 
-## Create GitHub account
+## 1. Create GitHub account
 - Create a GitHub account if you have not already: https://github.com/join
 - Create a **private** repository called `git-tryout`: https://github.com/new . Make sure to tick the "Add a README file" box.
 
-## Install Git
+## 2. Install Git
 
-### Windows
+### 2.1. Windows
 - install Git: https://git-scm.com/download/win
 - If you have Git installed already, please make sure that you have at **least version 2.29** (required for storing credentials securely): 
 ```
@@ -25,17 +25,17 @@ If you do not have at least version `2.29`, please update Git:
 git update-git-for-windows
 ```
 
-### Mac
+### 2.2. Mac
 - install Git, see [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Linux
+### 2.3. Linux
 - Git should already be installed on your machine. To check, please run: 
 ```
 git version
 ```
 If not, please google "install git {your distro}" and you should find out how to install it.
 
-## Introduce yourself to Git
+## 3. Introduce yourself to Git
 
 Open a terminal (Mac / Linux) or Git Bash (Windows).
 
@@ -48,18 +48,22 @@ git config --global alias.graph 'log --graph --oneline'
 git config --global --list
 ```
 
-## Authentication
+## 4. Authentication
 
-### Create a Personal Access Token
+### 4.1. Create a Personal Access Token
 - https://github.com/settings/tokens
 - give it a name like "personal laptop" 
 - copy the token somewhere temporary - but don't save it!
 
-Now, we have to store the Personal Access Token on our Laptop and tell Git to use it when communicating with GitHub. In order to do so, we need a Git "credential helper".
+This is also described in [this guide](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) 
 
-### Windows and Mac
+Now, we have to store the Personal Access Token (PAT) on our Laptop and tell Git to use it when communicating with GitHub. In order to do so, we need a Git "credential helper".
 
-**Mac**: On Mac, install [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core/releases/tag/v2.0.394-beta) by downloading and executing the `pkg` installer. 
+### 4.2. Store the Personal Access Token safely
+
+### 4.2.a. Windows and Mac
+
+**Mac**: On Mac, install **[Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core/releases/tag/v2.0.394-beta)** by downloading and executing the `pkg` installer. 
 
 Open Git Bash (on Windows) or the Terminal (on Mac)
 
@@ -84,7 +88,7 @@ It will look something like this. Make sure to select option 2 by typing in "2" 
 
 Hit enter. Git should clone your repository. You can confirm it is there by running `ls` - `git-tryout` should be in the list.
 
-### Linux 
+### 4.2.b. Linux 
 
 You should use the `libsecret` package, see [this article](https://www.softwaredeveloper.blog/git-credential-storage-libsecret)
 
@@ -101,7 +105,7 @@ If this is not an option on your Linux distro, you can:
 - add to GitHub
   - go to the [SSH keys](https://github.com/settings/keys) section of the GitHub settings and copy your key into the box. Give a meaningful name and click "add key"
   
-## Test your setup
+## 5. Test your setup
 If you haven't already, clone your tryout repository in Git bash / terminal:
 
 ```
