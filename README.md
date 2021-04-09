@@ -72,7 +72,6 @@ git credential-manager-core configure
 
 this tells git to use the [credential-manager-core](https://github.com/microsoft/Git-Credential-Manager-Core) as the _credential store_.
 
-```
 
 just to make sure, we also update the git config (this might be necessary if you had git installed before):
 
