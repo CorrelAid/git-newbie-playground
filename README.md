@@ -53,6 +53,7 @@ git config --global --list
 ### 4.1. Create a Personal Access Token
 - https://github.com/settings/tokens
 - give it a name like "personal laptop" 
+- **make sure to give it the "repo" scope**
 - copy the token somewhere temporary - but don't save it!
 
 This is also described in [this guide](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) 
