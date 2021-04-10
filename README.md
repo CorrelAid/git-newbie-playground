@@ -76,7 +76,7 @@ this tells git to use the [credential-manager-core](https://github.com/microsoft
 just to make sure, we also update the git config (this might be necessary if you had git installed before):
 
 ```
-git config --global credential.helper manager-core 
+git config --global --replace-all credential.helper manager-core
 ```
 
 we need to _trigger_ the credential store to save our Personal Access Token in it, so let's clone ("download") your private repository `git-tryout` that you created before:
