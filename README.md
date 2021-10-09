@@ -76,7 +76,7 @@ this tells git to use the [credential-manager-core](https://github.com/microsoft
 just to make sure, we also update the git config (this might be necessary if you had git installed before):
 
 ```
-git config --global credential.helper manager-core 
+git config --global --replace-all credential.helper manager-core
 ```
 
 we need to _trigger_ the credential store to save our Personal Access Token in it, so let's clone ("download") your private repository `git-tryout` that you created before:
@@ -201,6 +201,23 @@ image from the web
 Source: https://imgs.xkcd.com/comics/correlation.png
 
 merge conflicts might be a bit frightening but you can do it! :) 
+
+# Troubleshooting 
+## It doesn't work with the token!
+You can also try with just entering your password - especially on Windows, this might work even better (we use the PAT here because it's more cross-platform!)
+
+## it works in the terminal but not with the RStudio Git pane
+You might have two git versions installed and RStudio might be using an old version which does not support the credential-manager-core credential helper. 
+
+To check, compare the output of 
+
+``` 
+which git
+```
+
+from your terminal / Git shell with the global settings in RStudio. Adapt the RStudio settings so that the  paths match!
+
+![Screenshot 2021-07-09 at 09 40 31](https://user-images.githubusercontent.com/13187448/125042062-bb2f7600-e099-11eb-96a3-1c9a376b9405.png)
 
 
 # Resources
