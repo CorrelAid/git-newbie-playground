@@ -40,3 +40,7 @@ vignettes/*.pdf
 
 # Ds store
 .DS_Store
+
+data/raw
+
+notcommit.R
